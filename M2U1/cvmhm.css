@@ -1,0 +1,72 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #2ecc71;
+    padding: 0;
+    margin: 0;
+}
+header{
+    /*background-color:#27ae60;*/
+    background: radial-gradient(ellipse at center, #b4e391 0%,#61c419 50%,#b4e391 100%); 
+    color: #075728;
+    margin: 0;
+    padding:1px;
+    border-radius: 10px;
+}
+
+.personal, .formacion, .experiencia, .preferencias{
+    background: linear-gradient(45deg, #99d88a 0%,#1ca515 50%,#7dc489 100%);
+    margin: 3px;
+    padding: 2px;
+    border-style: 20px solid rgb(179, 58, 58);
+    border-radius: 10px;
+}
+
+footer{
+    /*background-color:#27ae60;*/
+    background: linear-gradient(45deg, #99d88a 0%,#1ca515 50%,#7dc489 100%);
+    margin: 0;
+    color: white;
+}
+h1{
+    text-align: center;
+}
+
+h2{
+    margin: 0;
+}
+
+h4{
+    margin: 0;
+}
+label{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul{
+    margin: 0 0 0 20px;
+}
+
+li{
+    padding-bottom: 2px;
+}
+
+.italica, .otros-conocimientos{
+    font-style: italic;
+    font-weight: bold;
+}
+
+section{
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom:5px;
+    margin-left: 100px;
+}
+
+#copyright{
+    text-align: right;
+    text-transform: capitalize;
+}
+
