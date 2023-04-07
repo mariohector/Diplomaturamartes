@@ -9,6 +9,8 @@ body{
 }
 header{
     /*background-color:#27ae60;*/
+    width: 100%;
+    height: 8vh;
     background: radial-gradient(ellipse at center, #b4e391 0%,#61c419 50%,#b4e391 100%); 
     color: #075728;
     margin: 0;
@@ -16,6 +18,17 @@ header{
     border-radius: 10px;
 }
 
+h1{
+    text-align: center;
+    margin: 0;
+    padding: 5px;
+}
+
+div{
+    width: 550px;
+    height: 180px;
+    box-shadow: 4px 4px #075728;
+}
 .personal, .formacion, .experiencia, .preferencias{
     background: linear-gradient(45deg, #99d88a 0%,#1ca515 50%,#7dc489 100%);
     margin: 3px;
@@ -30,12 +43,17 @@ footer{
     margin: 0;
     color: white;
 }
-h1{
-    text-align: center;
+.icono{
+    width: 20px;
+    height: 20px;
 }
 
 h2{
     margin: 0;
+}
+
+.contact{
+    list-style: none;
 }
 
 h4{
