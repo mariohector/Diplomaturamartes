@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding-top: 100px;
+}
+
+.contenedor {
+  margin: auto;
+  background-color: rgb(255, 255, 255);
+  width: 456px;
+  height: 456px;
+  border: 3px solid black;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+div {
+  width: 150px;
+  height: 150px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  /* font-weight: bold; */
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.rojo {
+  background-color: red;
+}
+
+.verde {
+  background-color: green;
+}
+
+.azul {
+  background-color: blue;
+}
