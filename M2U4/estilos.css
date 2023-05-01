@@ -1,0 +1,99 @@
+/* Reset estilos */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+
+.seccion-clara {
+  color: black;
+  background-color: white;
+}
+
+.seccion-titulo {
+  font-size: 2rem;
+  padding: 15px 0;
+  font-family: "Abril Fatface", cursive;
+}
+
+.seccion-descripcion {
+  font-size: 1.2rem;
+  color: #584e4e;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* NavBar */
+.navbar {
+    padding: 1rem;
+  }
+
+.navbar-color{
+  background: #a8ff78;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #78ffd6, #a8ff78);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #78ffd6, #a8ff78); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border: 2px solid #78ffd6;
+  box-shadow: 2px 2px 3px #07805b;
+}
+.nav-link{
+  color: antiquewhite);
+  font-weight: 600;
+}
+
+.nav-link:hover{
+  border: 2px solid rgb(9, 197, 65);
+  border-radius:10px;
+  background-color: rgb(100, 238, 123);
+}
+.navbar-collapse {
+    align-items: center;
+    justify-content: space-between;  
+  }
+
+/* Inicial */
+
+.inicial .carousel {
+  max-width: 800px;
+}
+
+.carousel-item {
+  height: 500px;
+}
+
+.carousel-item .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.inicial-imagen {
+  height: 250px;
+  width: 250px;
+  margin: 10px 10px 20px 10px;
+}
+
+.inicial-texto {
+  max-width: 70%;
+  font-size: 20px;
+  text-align: center;
+  font-family: "Abril Fatface", cursive;;
+}
+
+.inicial-info {
+  font-weight: bold;
+  text-align: center;
+}
+
+.inicial-info p {
+  margin-bottom: 0;
+}
