@@ -32,11 +32,6 @@ p{
   padding: 0 20px 15px 20px;
 }
 
-.container{
-  display: flex;
-  justify-content: space-between;
-
-}
 /* HEADER */
 header {
   background: #a8ff78; /* fallback for old browsers */
@@ -55,7 +50,7 @@ header {
   padding: 0;
 }
 
-header.sign h1 {
+header .holder .sign h1 {
   color: rgb(38, 104, 25);
   font-size: 40px;
   font-weight: 500;
