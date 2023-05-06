@@ -143,9 +143,14 @@ footer{
   border: 1px solid black;
 }
 
-.ubicacion img{
+/* .ubicacion img{
  width: 100%;
  height: 100%;
+} */
+
+.ubicacion iframe{
+  width: 100%;
+  height: 100%;
 }
 
 /* PRODUCTOS */
