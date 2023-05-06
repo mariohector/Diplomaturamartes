@@ -34,9 +34,9 @@ p{
 
 /* HEADER */
 header {
-  background: #a8ff78; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #78ffd6, #a8ff78); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #78ffd6,#a8ff78); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #a8ff78; 
+  background: -webkit-linear-gradient(to right, #78ffd6, #a8ff78);
+  background: linear-gradient(to right, #78ffd6,#a8ff78); 
   padding: 16px 0;
   /* height: 15vh; */
 }
@@ -177,4 +177,24 @@ footer{
 
 .productos:nth-child(even){
   flex-direction: row-reverse;
+}
+
+/* GALERIA */
+.galeria{
+  padding:20px 10px;
+  margin:0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.galeria img{
+  width: 100%;
+  max-width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
 }
