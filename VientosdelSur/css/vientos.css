@@ -20,25 +20,24 @@ body {
   margin: 0 auto;
 }
 
-h2{
+h2 {
   font-size: 50px;
   font-weight: 700;
   padding: 20px 0 20px 10px;
-  letter-spacing: 3px
+  letter-spacing: 3px;
 }
 
-p{
+p {
   font-size: 30px;
   padding: 0 20px 15px 20px;
 }
 
 /* HEADER */
 header {
-  background: #a8ff78; 
+  background: #a8ff78;
   background: -webkit-linear-gradient(to right, #78ffd6, #a8ff78);
-  background: linear-gradient(to right, #78ffd6,#a8ff78); 
+  background: linear-gradient(to right, #78ffd6, #a8ff78);
   padding: 16px 0;
-  /* height: 15vh; */
 }
 
 .sign {
@@ -69,19 +68,18 @@ header .holder .sign h1 {
   padding-left: 30px;
 }
 
-.iconos{
+.iconos {
   background-color: #104504;
   width: 100px;
   height: 100px;
-
 }
 /* NAV */
 nav {
-    background-color: darkgray;
-    margin-bottom: 20px;
+  background-color: darkgray;
+  margin-bottom: 20px;
 }
 
-nav ul{
+nav ul {
   list-style: none;
   margin: 0;
   padding: 8px;
@@ -89,7 +87,7 @@ nav ul{
   flex-direction: row;
 }
 
-nav ul li{
+nav ul li {
   flex-grow: 1;
 }
 
@@ -101,22 +99,22 @@ nav ul li {
   text-align: center;
 }
 
-nav ul li a{
+nav ul li a {
   text-decoration: none;
   padding: 0 30px;
   margin: 0;
 }
 
-nav ul li a:hover{
+nav ul li a:hover {
   background-color: #4c76a5;
 }
 
-nav ul li a.activo{
+nav ul li a.activo {
   background-color: #4c76a5;
 }
 
 /* FOOTER */
-footer{
+footer {
   background-color: #ccc;
   clear: both;
   color: #333;
@@ -126,35 +124,42 @@ footer{
   margin-top: 20px;
 }
 
+button {
+  cursor: pointer;
+  color: rgb(3, 59, 17);
+  font-size: 25px;
+  padding: 0 10px 0 10px;
+  margin-bottom: 20px;
+}
+
+.redes {
+  display: inline-block;
+  margin: 0;
+}
 /* HOME */
-.columnas{
+.columnas {
   display: flex;
   justify-content: space-between;
 }
 
-.bienvenidos{
+.bienvenidos {
   width: 50%;
   padding-right: 10px;
   box-sizing: border-box;
 }
 
-.ubicacion{
+.ubicacion {
   width: 50%;
   border: 1px solid black;
 }
 
-/* .ubicacion img{
- width: 100%;
- height: 100%;
-} */
-
-.ubicacion iframe{
+.ubicacion iframe {
   width: 100%;
   height: 100%;
 }
 
 /* PRODUCTOS */
-.productos{
+.productos {
   border: 1px solid #ccc;
   border-radius: 10px;
   padding: 16px;
@@ -164,25 +169,25 @@ footer{
   align-items: center;
 }
 
-.productos .info p{
+.productos .info p {
   font-size: 25px;
 }
 
-.productos img{
+.productos img {
   border-radius: 13px;
   display: block;
   max-width: 225px;
   max-height: 200px;
 }
 
-.productos:nth-child(even){
+.productos:nth-child(even) {
   flex-direction: row-reverse;
 }
 
 /* GALERIA */
-.galeria{
-  padding:20px 10px;
-  margin:0 auto;
+.galeria {
+  padding: 20px 10px;
+  margin: 0 auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -191,10 +196,97 @@ footer{
   gap: 10px;
 }
 
-.galeria img{
+.galeria img {
   width: 100%;
   max-width: 250px;
   height: 250px;
   object-fit: cover;
   border-radius: 10px;
+}
+
+.contacto {
+  display: flex;
+  gap: 24px;
+}
+
+.contacto div {
+  width: 100%;
+}
+
+.datos p {
+  font-size: 14px;
+}
+
+/* CONTACTO */
+.contacto {
+  display: flex;
+  gap: 24px;
+}
+
+.contacto div {
+  width: 100%;
+}
+
+.datos p {
+  font-size: 20px;
+}
+
+.contacto .datos ul {
+  list-style: none;
+  color: rgb(11, 48, 4);
+  font-size: 24px;
+  font-weight: 100;
+  font-style: italic;
+}
+.contacto .datos ul li {
+  padding: 10px 0;
+}
+
+.contacto div h3,
+.contacto div .datos h3,
+.contacto div p {
+  color: rgb(11, 48, 4);
+  font-size: 25px;
+  font-weight: 100;
+  font-style: italic;
+  padding-top: 10px;
+  padding-left: 30px;
+}
+
+.formulario p {
+  display: flex;
+}
+
+.formulario p label {
+  min-width: 80px;
+}
+
+.formulario p label {
+  display: flex;
+  align-items: center;
+}
+
+.formulario p:nth-child(4) {
+  align-items: start;
+}
+
+.formulario textarea {
+  resize: none;
+  height: 150px;
+}
+
+.formulario input[type="submit"] {
+  background:#a8ff78;
+  box-shadow: 0 0 10px rgba(3, 59, 17, 0.4);
+  color: #104504;
+  font-size: 25px;
+  padding: 6px 20px;
+  width: auto;
+  position: relative;
+  left: 5rem;
+  cursor: pointer;
+}
+
+.formulario input[type="submit"]:hover{
+  background-color: aquamarine;
 }
