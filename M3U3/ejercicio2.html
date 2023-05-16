@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 2 JS</title>
+  </head>
+  <body>
+    <!-- Crear el código que reciba como parámetro un array de números y devuelva el mayor. -->
+
+    <script>
+      let numeros = [];
+
+      let x = "";
+
+      while (x != "0") {
+        x = parseInt(prompt("Ingrese un número (0 para salir):", ""));
+        if (x != 0) {
+          numeros.push(x);
+        }
+      }
+      
+      console.log(numeros);
+
+      let mayor = numeros[0];
+
+      for (let i = 1; i < numeros.length; i++) {
+        if (numeros[i] > mayor) {
+          mayor = numeros[i];
+        }
+      }
+      console.log("El numero mas grande del array es " + mayor);
+    </script>
+  </body>
+</html>
