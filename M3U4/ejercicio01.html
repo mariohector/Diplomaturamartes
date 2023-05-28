@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Body BG</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .contenedor {
+        margin: 0;
+        background-color: rgb(255, 255, 255);
+        width: 300px;
+        height: 100px;
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+      }
+
+      div {
+        width: 100px;
+        height: 100px;
+      }
+
+      div:hover {
+        cursor: pointer;
+      }
+      .rojo {
+        background-color: red;
+      }
+
+      .verde {
+        background-color: green;
+      }
+
+      .azul {
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="contenedor">
+      <div id="rojo" class="rojo"></div>
+      <div id="verde" class="verde"></div>
+      <div id="azul" class="azul"></div>
+    </section>
+
+    <script>
+      document.getElementById("rojo").addEventListener("click", ponRojo);
+      document.getElementById("verde").addEventListener("click", ponVerde);
+      document.getElementById("azul").addEventListener("click", ponAzul);
+	
+      function ponRojo() {
+		document.querySelector('body').style.background="red";
+	  }
+
+      function ponVerde() {
+        document.querySelector('body').style.background="green";
+      }
+
+      function ponAzul() {
+        document.querySelector('body').style.background="blue";
+      }
+
+    </script>
+  </body>
+</html>
