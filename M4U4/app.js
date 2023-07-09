@@ -54,16 +54,15 @@ app.get('/salir', function(req, res){
   res.redirect('/');
 });
 
-app.post('/tarea', function(req,res){
-  if(req.body.numero > 0){
-    req.session.numero =req.body.numero * 10
 
-    res.render('result',{
-      title: 'Numero ingresado por diez',
-      nombre: req.session.numero
-    });
-  }
-    });
+app.post('/tarea', function(req,res){
+  req.session.numero = req.body.numero * 10
+
+  res.render('result',{
+    title: 'Calculo',
+    numero: req.session.numero
+  });  
+});
 
 //=====================================================
 
