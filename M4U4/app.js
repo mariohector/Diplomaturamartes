@@ -56,8 +56,8 @@ app.get('/salir', function(req, res){
 
 
 app.post('/tarea', function(req,res){
-  req.session.numero = req.body.numero * 10
-
+  req.session.numero = req.body.numero * 10   //recupero el valor que me viene y
+                                              //lo multiplico por 10
   res.render('result',{
     title: 'Calculo',
     numero: req.session.numero
