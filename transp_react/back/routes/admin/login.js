@@ -30,4 +30,11 @@ router.post('/', async (req, res, next) =>{
   }
 });
 
+router.get('/logout', function(req,res,next){
+  req.session.destroy();
+  res.render('admin/login', {           //login.hbs
+    layout:'admin/layout'               //layout.hbs
+    });
+});
+
 module.exports = router;
